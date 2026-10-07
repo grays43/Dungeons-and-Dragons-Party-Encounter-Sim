@@ -5,10 +5,26 @@ import model.character.Combatant;
 import model.character.DefenseStats;
 import model.character.HitPoints;
 import model.weapons.Weapon;
+import view.AppWindow;
 
 public class App {
 
-    static public void main(String[] args) {
+    public static AppWindow win;
+
+    static public void main(String[] args) {        
+
+        win = new AppWindow();
+        win.init();
+        win.setDefaultCloseOperation(AppWindow.EXIT_ON_CLOSE);
+        win.pack();
+        win.setVisible(true);
+    /*
+    
+    
+    
+    
+    
+    */
         int roll;
         AbilityScores pcScores = new AbilityScores(10, 10, 10, 10, 10, 10);
         HitPoints pcHitPoints = new HitPoints(20, 0);
