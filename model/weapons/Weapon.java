@@ -6,25 +6,23 @@ public class Weapon {
 
     private WeaponType weaponType;
     private Dice damageDie;
+    private DamageType mainDamage;
 
-    public Weapon(WeaponType weaponType, Dice damageDie) {
+    public Weapon(WeaponType weaponType, Dice damageDie, DamageType mainDamage) {
         this.weaponType = weaponType;
         this.damageDie = damageDie;
+        this.mainDamage = mainDamage;
     }
 
     public WeaponType getWeaponType() {
         return weaponType;
     }
 
-    public void setWeaponType(WeaponType weaponType) {
-        this.weaponType = weaponType;
-    }
-
     public Dice getDamageDie() {
         return damageDie;
     }
 
-    public void setDamageDie(Dice damageDie) {
-        this.damageDie = damageDie;
+    public DamageType getMainDamage() {
+        return mainDamage;
     }
 }

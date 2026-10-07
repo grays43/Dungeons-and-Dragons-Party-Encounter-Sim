@@ -5,7 +5,8 @@ public class AbilityScores {
     private int strMod, dexMod, conMod, intelMod, wisMod, chaMod;
 
     public AbilityScores(int strength, int dex, int con, 
-                            int intel, int wis, int cha) {
+                            int intel, int wis, int cha) 
+    {
         this.strength = strength;
         this.dex = dex;
         this.con = con;
