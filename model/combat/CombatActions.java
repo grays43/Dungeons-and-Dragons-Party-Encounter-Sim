@@ -1,4 +1,4 @@
-package model;
+package model.combat;
 
 public interface CombatActions {    
     public int hitRoll();    
