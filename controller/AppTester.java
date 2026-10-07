@@ -20,6 +20,7 @@ public class AppTester {
         for (int i = 0; i < 1000; i++) {
             roll = pc.getD20().roll();
             System.out.println("Roll: " + roll);
-        }      
+        }
+        // test comment
     }
 }
