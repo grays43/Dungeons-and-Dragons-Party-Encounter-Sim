@@ -16,7 +16,7 @@ public class HitPoints {
         }
     }
 
-    // public void takeDamage(int damage) {
+    // public void takeDamage(int damage) {  [old implementation, no good]
     // if (hasTempHP()) {
     // tempHpDamage(damage);
     // }
@@ -32,11 +32,11 @@ public class HitPoints {
             throw new IllegalArgumentException("Damage cannot be negative");
         }
 
-        int absorbed = Math.min(tempHP, damage);
-        tempHP -= absorbed;
+        int absorbed = Math.min(tempHP, damage); // take min value of tempHP and damage
+        tempHP -= absorbed;                      // subtract absorbed damage from tempHP
 
-        int remainingDamage = damage - absorbed;
-        currHP = Math.max(0, currHP - remainingDamage);
+        int remainingDamage = damage - absorbed; // calculates the remaining damage after tempHP absorption
+        currHP = Math.max(0, currHP - remainingDamage); // subtracts remainder dmg from curr HP
     }
 
     // gets and sets
